@@ -52,7 +52,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'global_login_required.GlobalLoginRequiredMiddleware',
+    'login_required.middleware.LoginRequiredMiddleware',
 ]
 
 ROOT_URLCONF = 'to_do.urls'
@@ -113,7 +113,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/2.1/topics/i18n/
 
-LANGUAGE_CODE = 'en_US'
+LANGUAGE_CODE = 'en-US'
 
 TIME_ZONE = 'America/Sao_Paulo'
 
@@ -141,3 +141,4 @@ PUBLIC_VIEWS = [
     'django.contrib.auth.views.LoginView',
     'django.contrib.auth.views.LogoutView'
 ]
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
