@@ -1,5 +1,4 @@
 # django-todolist
-123 Teste
 Simple todolist write in django for general use and pipeline automation..
 
   - Be kind with my baby
